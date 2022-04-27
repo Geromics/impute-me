@@ -74,7 +74,7 @@ shinyServer(function(input, output) {
   
   output$text1 <- renderText({ 
     if(input$goButton == 0){
-      return("There exists SNPs that give various pre-dispositions for fitness-levels. While these variants are clearly reproducible throughout many studies, their effect is still rather limited - meaning that one can be a world-class sprinter without necessarily having 'the sprinter gene'. Many tests are sold for these specific SNPs, giving you knowledge of handful of specific fitness related SNPs. Many tests are over-sold. And of course the very same information is also available for free if you already have imputed genotyping microarray information. 
+      return("There exists SNPs that give various predispositions for fitness-levels. While these variants are clearly reproducible throughout many studies, their effect is still rather limited - meaning that one can be a world-class sprinter without necessarily having 'the sprinter gene'. Many tests are sold for these specific SNPs, giving you knowledge of handful of specific fitness related SNPs. Many tests are over-sold. And of course the very same information is also available for free if you already have imputed genotyping microarray information. 
 
              Here we have tried to collect a set of SNPs that clearly are of interest to know if you are into athletics")
     }else if(input$goButton > 0) {
@@ -142,7 +142,7 @@ shinyServer(function(input, output) {
     if(input$goButton == 0){
       return("")
     }else if(input$goButton > 0) {
-      message <- "<br><br>This table calculates genetic risk scores for all domains covered in <u><a href='https://www.ncbi.nlm.nih.gov/pubmed/25919592'>Goodlin et al</a></u>, which covers a number of often encountered injuries and dietary needs in athletics. The risk score is indicated as percentile, i.e. 'how many percent of people have a lower score'. So it <i>should not</i> be translated as the direkt risk probability. It is just a measure of how you scale relative to other people, based on a measurement of the known genetic component.<br><br>"
+      message <- "<br><br>This table calculates genetic risk scores for all domains covered in <u><a href='https://www.ncbi.nlm.nih.gov/pubmed/25919592'>Goodlin et al</a></u>, which covers a number of often encountered injuries and dietary needs in athletics. The risk score is indicated as percentile, i.e. 'how many percent of people have a lower score'. So it <i>should not</i> be translated as the direct risk probability. It is just a measure of how you scale relative to other people, based on a measurement of the known genetic component.<br><br>"
       
       return(message)
     }
